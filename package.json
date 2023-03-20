@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "devDependencies": {
+    "@iconify/vue": "^4.0.0",
+    "@nuxt/image-edge": "^1.0.0-27769790.4b27db3",
+    "@nuxtjs/tailwindcss": "^6.1.3",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "autoprefixer": "^10.4.13",
+    "babel-eslint": "8",
+    "eslint": "4.x",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.7.0",
+    "nuxt": "3.0.0-rc.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "iconoir": "^5.4.1"
+  }
+}
