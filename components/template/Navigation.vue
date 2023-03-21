@@ -3,33 +3,20 @@
     <LogoUs class="py-2" />
     <div class="flex flex-row justify-between">
       <MenuButton
-        :toggle="toggle"
-        @toggle="toggle = !toggle"
+        @toggle-menu="toggleMenu"
+        :menu-open="menuOpen"
       />
       <SearchButton class="bg-primary" />
     </div>
   </nav>
 </template>
 
-<script>
+<script setup>
 import SearchButton from "./navigationButtons/SearchButton.vue";
 import LogoUs from "./icons/LogoUs.vue";
 import MenuButton from "./navigationButtons/MenuButton.vue"
-export default {
-    name: 'NavigationTemplate',
-    components: {
-    MenuButton,
-    LogoUs,
-    SearchButton
-},
 
-    setup() {
-        const toggle = ref(false)
-        return {
-            toggle,
-        }
-    }
+import { ref } from 'vue';
 
-}
+
 </script>
-

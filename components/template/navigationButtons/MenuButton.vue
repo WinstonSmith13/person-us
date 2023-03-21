@@ -1,5 +1,9 @@
 <template>
-  <div @click="toggleMenu" class="menu-btn flex-row" :class="{ open: menuOpen }">
+  <div
+    @click="toggleMenu"
+    class="menu-btn flex-row"
+    :class="{ open: menuOpen }"
+  >
     <div class="menu-btn_burger">
       <span class="sr-only">Open main menu</span>
     </div>
