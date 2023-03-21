@@ -2,11 +2,11 @@
   <button
     class="cursor-pointer p-2 inline-flex items-center justify-center text-white focus:outline-none"
     aria-expanded="false"
-    @click="$emit('toggle')"
+    @click="toggleCross"
   >
     <span class="sr-only">Open main menu</span>
     <Icon
-      icon="codicon:three-bars"
+      :icon="isCross ? 'codicon:close' : 'codicon:three-bars'"
       color="white"
       width="24"
       height="24"
@@ -17,15 +17,24 @@
   </button>
 </template>
   
-<script>
-import { Icon } from '@iconify/vue';
+<script setup>
 
-export default {
-  name: 'MenuButton',
-  components: {
-    Icon,
-  },
-  emits: ['toggle']
+
+
+
+
+
+
+import { Icon } from '@iconify/vue';
+import { ref } from 'vue';
+
+const emit = defineEmits(['toggle'])
+const isCross = ref(false)
+
+function toggleCross ()  {
+  isCross.value = !isCross.value;
+  emit('toggle');
+
 }
+
 </script>
-  

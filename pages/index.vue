@@ -26,7 +26,8 @@
   </div>
 </template>
   
-<script>
+<script setup>
+
 import Introduction from '../components/landing/sections/IntroductionSection.vue';
 import News from '../components/landing/sections/NewsSection.vue';
 import AgendaSection from '../components/landing/sections/AgendaSection.vue';
@@ -36,17 +37,4 @@ import SkillSection from '../components/landing/sections/SkillSection.vue';
 import PublicationSection from '../components/landing/sections/PublicationSection.vue';
 import TechnologySection from '../components/landing/sections/TechnologySection.vue'
 
-export default {
-  name: 'HomePage',
-  components: {
-    Introduction,
-    News,
-    AgendaSection,
-    ProjectSection,
-    ContributorSection,
-    SkillSection,
-    PublicationSection,
-    TechnologySection
-}
-}
 </script>
