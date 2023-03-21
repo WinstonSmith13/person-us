@@ -5,7 +5,6 @@
       <MenuButton
         :toggle="toggle"
         @toggle="toggle = !toggle"
-        class="bg-primary"
       />
       <SearchButton class="bg-primary" />
     </div>
