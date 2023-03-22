@@ -1,5 +1,5 @@
 <template>
-  <div class="z-[1000] fixed top-0 left-0 w-full h-full bg-blue-600 bg-opacity-80 overflow-hidden md:hidden">
+  <div class="z-[1000] fixed top-0 left-0 w-full h-full bg-blue-600 bg-opacity-80 overflow-hidden ">
     <div class="pt-3 pb-2">
       <div class="flex items-center justify-between px-8">
         <div class="-mr-2">
