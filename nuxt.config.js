@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
     buildModules: ['@nuxtjs/tailwindcss'],
     modules: [
-        '@nuxt/image-edge',
+        '@vueuse/nuxt',
+        '@nuxt/image-edge'
     ],
     meta: {
         title: 'PersonUs',
