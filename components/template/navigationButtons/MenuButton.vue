@@ -1,7 +1,7 @@
 <template>
   <div
     @click="toggleMenu"
-    class="menu-btn flex-row"
+    class="menu-btn flex-row z-[1]"
     :class="{ open: menuOpen }"
   >
     <div class="menu-btn_burger">
@@ -29,7 +29,7 @@ function toggleMenu() {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
+  width: 100px;
   height: 50px;
   cursor: pointer;
   transition: all .1s ease-in-out;
@@ -38,7 +38,7 @@ function toggleMenu() {
 
 .menu-btn_burger {
   width: 20px;
-  height: 5px;
+  height: 2px;
   background: #fff;
   border-radius: 5px;
   transition: all .1s ease-in-out;
@@ -49,18 +49,18 @@ function toggleMenu() {
   content: '';
   position: absolute;
   width: 20px;
-  height: 5px;
+  height: 2px;
   background: #fff;
   border-radius: 5px;
   transition: all .1s ease-in-out;
 }
 
 .menu-btn_burger::before {
-  transform: translateY(-16px);
+  transform: translateY(-6px);
 }
 
 .menu-btn_burger::after {
-  transform: translateY(16px);
+  transform: translateY(6px);
 }
 
 /* ANIMATION */

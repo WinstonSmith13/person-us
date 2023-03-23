@@ -1,5 +1,5 @@
 <template>
-  <div class="z-[1000] fixed top-0 left-0 w-full h-full bg-blue-600 bg-opacity-80 overflow-hidden ">
+  <div class="z-[0] fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 overflow-hidden ">
     <div class="pt-3 pb-2">
       <div class="flex items-center justify-between px-8">
         <div class="-mr-2">
@@ -34,18 +34,18 @@
         >
           <h1>
             <span
-              class="block text-white hover:text-background cursor-pointer px-3 py-2 font-bold text-2xl hover:text-yellow-400"
+              class="block text-black hover:text-background cursor-pointer px-3 py-2 font-bold text-2xl hover:text-primary"
             >Home</span>
           </h1>
         </li>
         <li
           @click="$emit('menuToggle')"
-          class="text-white font-bold"
+          class="text-black font-bold"
           to="/about"
         >
           <h1>
             <span
-              class="block text-white hover:text-background cursor-pointer px-3 py-2 font-bold text-2xl hover:text-yellow-400"
+              class="block text-black hover:text-background cursor-pointer px-3 py-2 font-bold text-2xl hover:text-primary"
             >About</span>
           </h1>
         </li>

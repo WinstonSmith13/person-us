@@ -1,11 +1,11 @@
 <template>
   <div class="absolute top-0 w-full">
-    <div class="fixed inset-x-0 z-10 mx-4 md:mx-40">
+    <div class="fixed inset-x-0 z-10 mx-4">
       <div class="max-w-screen-lg mx-auto" id="navBar">
         <NavigationTemplate />
       </div>
     </div>
-    <div class="mt-80 mx-4 md:mx-40 ">
+    <div class="mt-120 mx-4 md:mx-40 ">
       <div class="max-w-screen-lg mx-auto shadow-2xl bg-white" id="containerContent">
         <slot />
         <FooterTemplate />
@@ -20,7 +20,7 @@ import { onMounted } from 'vue';
 
 const sectionOneOption = {
   root: null,
-  threshold: 0.20,
+  threshold: 0.12,
   rootMargin: "0px",
 };
 
