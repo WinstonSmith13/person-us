@@ -1,23 +1,41 @@
 <template>
+  <CarouselTemplate>
+    <CarouselSlide>
+      Hello les gens
+    </CarouselSlide>
+    <CarouselSlide>
+      Au revoir les gens
+    </CarouselSlide>
+  </CarouselTemplate>
+
+
+  
   <div class="absolute top-0 w-full">
     <div class="fixed inset-x-0 z-10 mx-4">
-      <div class="max-w-screen-lg mx-auto" id="navBar">
+      <div
+        class="max-w-screen-lg mx-auto"
+        id="navBar"
+      >
         <NavigationTemplate />
       </div>
     </div>
     <div class="mt-120 mx-4 md:mx-40 flex justify-center">
-      <div class="max-w-screen-lg mx-auto shadow-2xl bg-white" id="containerContent">
+      <div
+        class="max-w-screen-lg mx-auto shadow-2xl bg-white"
+        id="containerContent"
+      >
         <slot />
         <FooterTemplate />
       </div>
     </div>
-
   </div>
 </template>
 
 <script setup>
 import FooterTemplate from '../components/template/Footer.vue';
 import NavigationTemplate from '../components/template/Navigation.vue';
+import CarouselTemplate from '../components/landing/sections/carousel/CarouselTemplate.vue';
+import CarouselSlide from '../components/landing/sections/carousel/CarouselSlide.vue';
 import { onMounted } from 'vue';
 
 const sectionOneOption = {
