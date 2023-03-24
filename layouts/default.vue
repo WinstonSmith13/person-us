@@ -5,12 +5,13 @@
         <NavigationTemplate />
       </div>
     </div>
-    <div class="mt-120 mx-4 md:mx-40 ">
+    <div class="mt-120 mx-4 md:mx-40 flex justify-center">
       <div class="max-w-screen-lg mx-auto shadow-2xl bg-white" id="containerContent">
         <slot />
         <FooterTemplate />
       </div>
     </div>
+
   </div>
 </template>
 

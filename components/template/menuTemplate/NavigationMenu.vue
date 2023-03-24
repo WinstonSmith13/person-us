@@ -1,5 +1,5 @@
 <template>
-  <div class="z-[0] fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 overflow-hidden ">
+  <div class="z-[0] fixed top-0 left-20 w-full h-full bg-white bg-opacity-90 overflow-hidden ">
     <div class="pt-3 pb-2">
       <ul class="mt-3 px-6 space-y-1 text-left">
         <li
