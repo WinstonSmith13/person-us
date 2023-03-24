@@ -13,6 +13,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import FooterTemplate from '../components/template/Footer.vue';
 import NavigationTemplate from '../components/template/Navigation.vue';
@@ -20,7 +21,7 @@ import { onMounted } from 'vue';
 
 const sectionOneOption = {
   root: null,
-  threshold: 0.12,
+  threshold: 0.1,
   rootMargin: "0px",
 };
 
