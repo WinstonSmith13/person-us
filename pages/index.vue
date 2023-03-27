@@ -1,7 +1,13 @@
 <template>
-  <CarouselTemplate>
-    Hello World
-  </CarouselTemplate>
+  <div class="home">
+    <CarouselTemplate class="carousel">
+      <CarouselSlide>
+        <div>
+          <p>Hello</p>
+        </div>
+      </CarouselSlide>
+    </CarouselTemplate>
+  </div>
 
   <div class="mt-120 mx-4 md:mx-40 flex justify-center">
     <div class="max-w-screen-lg mx-auto shadow-2xl bg-white">
@@ -45,5 +51,6 @@ import SkillSection from '../components/landing/sections/SkillSection.vue';
 import PublicationSection from '../components/landing/sections/PublicationSection.vue';
 import TechnologySection from '../components/landing/sections/TechnologySection.vue'
 import CarouselTemplate from '../components/landing/sections/carousel/CarouselTemplate.vue';
+import CarouselSlide from '../components/landing/sections/carousel/CarouselSlide.vue';
 
 </script>
