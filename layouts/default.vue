@@ -1,17 +1,23 @@
 <template>
-  <div class="top-0 w-full">
+  <div class="absolute top-0 w-full">
     <div class="fixed inset-x-0 z-10 mx-4">
-      <div class="max-w-screen-lg mx-auto" id="navBar">
+      <div
+        class="max-w-screen-lg mx-auto"
+        id="navBar"
+      >
         <NavigationTemplate />
       </div>
     </div>
-      <div class="mx-auto" id="containerContent">
-        <slot />
-      </div>
+    <div
+      class="mx-auto"
+      id="containerContent"
+    >
+      <slot />
+    </div>
   
 
     <div class="max-w-screen-lg mx-auto ">
-      <FooterTemplate/>
+      <FooterTemplate />
     </div>
   </div>
 </template>

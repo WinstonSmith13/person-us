@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <CarouselTemplate class="carousel">
+    <CarouselTemplate class="carousel absolute inset-0 bg-red-900">
       <CarouselSlide>
         <div>
           <p>Hello</p>
@@ -9,7 +9,8 @@
     </CarouselTemplate>
   </div>
 
-  <div class="mt-120 mx-4 md:mx-40 flex justify-center">
+
+  <div class="relative mt-120 mx-4 md:mx-40 flex justify-center">
     <div class="max-w-screen-lg mx-auto shadow-2xl bg-white">
       <!-- Main content  -->
       <div class="m-10">
@@ -39,9 +40,8 @@
     </div>
   </div>
 </template>
-  
-<script setup>
 
+<script setup>
 import Introduction from '../components/landing/sections/IntroductionSection.vue';
 import News from '../components/landing/sections/NewsSection.vue';
 import AgendaSection from '../components/landing/sections/AgendaSection.vue';
@@ -52,5 +52,15 @@ import PublicationSection from '../components/landing/sections/PublicationSectio
 import TechnologySection from '../components/landing/sections/TechnologySection.vue'
 import CarouselTemplate from '../components/landing/sections/carousel/CarouselTemplate.vue';
 import CarouselSlide from '../components/landing/sections/carousel/CarouselSlide.vue';
-
 </script>
+
+<style lang="scss" scoped>
+.carousel {
+  max-height: 60vh;
+  height: 60vh;
+}
+
+.home {
+  z-index: -1;
+}
+</style>
