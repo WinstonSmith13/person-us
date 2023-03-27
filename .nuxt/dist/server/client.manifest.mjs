@@ -1,0 +1,1 @@
+export { default } from "file:///Library/simplon/poulpus/personHome/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

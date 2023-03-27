@@ -1,12 +1,18 @@
 <template>
-    <div>
-        <slot />
-    </div>
+  <div class="carousel">
+    <slot />
+  </div>
 </template>
 
-<script setup>
+<script>
+export default {
+    setup() {
 
 
-
+        return {}
+    }
+}
 </script>
+
+<style></style>
 

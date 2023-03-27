@@ -1,13 +1,17 @@
 <template>
-  <div>
-    <slot />
+  <div class="slide">
+    <transition name="slide">
+      <slot />
+    </transition>
   </div>
 </template>
   
-  <script>
- export default {
+<script>
+export default {
 
- }
-  </script>
+}
+</script>
+
+<style></style>
   
   

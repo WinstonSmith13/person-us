@@ -1,32 +1,17 @@
 <template>
-  <CarouselTemplate>
-    <CarouselSlide>
-      Hello les gens
-    </CarouselSlide>
-    <CarouselSlide>
-      Au revoir les gens
-    </CarouselSlide>
-  </CarouselTemplate>
-
-
-  
-  <div class="absolute top-0 w-full">
+  <div class="top-0 w-full">
     <div class="fixed inset-x-0 z-10 mx-4">
-      <div
-        class="max-w-screen-lg mx-auto"
-        id="navBar"
-      >
+      <div class="max-w-screen-lg mx-auto" id="navBar">
         <NavigationTemplate />
       </div>
     </div>
-    <div class="mt-120 mx-4 md:mx-40 flex justify-center">
-      <div
-        class="max-w-screen-lg mx-auto shadow-2xl bg-white"
-        id="containerContent"
-      >
+      <div class="mx-auto" id="containerContent">
         <slot />
-        <FooterTemplate />
       </div>
+  
+
+    <div class="max-w-screen-lg mx-auto ">
+      <FooterTemplate/>
     </div>
   </div>
 </template>
@@ -34,13 +19,11 @@
 <script setup>
 import FooterTemplate from '../components/template/Footer.vue';
 import NavigationTemplate from '../components/template/Navigation.vue';
-import CarouselTemplate from '../components/landing/sections/carousel/CarouselTemplate.vue';
-import CarouselSlide from '../components/landing/sections/carousel/CarouselSlide.vue';
 import { onMounted } from 'vue';
 
 const sectionOneOption = {
   root: null,
-  threshold: 0.1,
+  threshold: 0.20,
   rootMargin: "0px",
 };
 
@@ -52,11 +35,11 @@ onMounted(() => {
 
   const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navBar.classList.add("transition-all", "duration-500", "max-w-[90%]");
+      if (!entry.isIntersecting) {
+        navBar.classList.add("transition-all", "duration-500", "max-w-[80%]");
         navBar.classList.remove("max-w-screen-lg");
       } else {
-        navBar.classList.remove( "max-w-[90%]");
+        navBar.classList.remove("max-w-[80%]");
         navBar.classList.add("max-w-screen-lg");
       }
     })
