@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-full mx-auto px-4 bg-gray-50">
+  <div class="max-w-full mx-auto px-4 ">
     <div class="flex flex-wrap justify-center md:justify-between md:text-left">
       <div class="basis-1/3">
         <footerNewsletter />
