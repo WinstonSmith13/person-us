@@ -1,55 +1,35 @@
 <template>
-  <div class="home">
-    <CarouselTemplate
-      class="carousel inset-0"
-      v-slot="{ currentSlide }"
+  <CarouselTemplate
+    class="carousel"
+    v-slot="{ currentSlide }"
+  >
+    <CarouselSlide
+      v-for="(slide, index) in carouselSlides"
+      :key="index"
     >
-      <CarouselSlide
-        v-for="(slide, index) in carouselSlides"
-        :key="index"
+      <div
+        v-show="currentSlide === index + 1"
+        class="slide-info"
       >
-        <div
-          v-show="currentSlide === index + 1"
-          class="slide-info"
-        >
-          <nuxt-img
-            :src="`../public/images/carouselBg/${slide}.jpeg`"
-            alt="carousel_images"
-            class="h-full min-w-full object-cover"
-          />
-        </div> 
-      </CarouselSlide>
-    </CarouselTemplate>
-  </div>
-
-
-  <div class="relative mt-[-100px] flex items-center px-52">
-    <div class="w-full  mx-auto shadow-2xl bg-white">
-      <!-- Main content  -->
-      <div class="m-10 ">
-        <Introduction />
-      </div>
-      <div class="m-10">
-        <News />
-      </div>
-      <div class="m-10">
-        <AgendaSection />
-      </div>
-      <div class="m-10">
-        <ProjectSection />
-      </div>
-      <div class="m-10">
-        <ContributorSection />
-      </div>
-      <div class="m-10">
-        <SkillSection />
-      </div>
-      <div class="m-10">
-        <PublicationSection />
-      </div>
-      <div class="m-10">
-        <TechnologySection />
-      </div>
+        <nuxt-img
+          :src="`../public/images/carouselBg/${slide}.jpeg`"
+          alt="carousel_images"
+          class="h-full min-w-full object-cover"
+        />
+      </div> 
+    </CarouselSlide>
+  </CarouselTemplate>
+  
+  <div class="relative mt-[-100px]">
+    <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto">
+      <Introduction />
+      <News />
+      <AgendaSection />
+      <ProjectSection />
+      <ContributorSection />
+      <SkillSection />
+      <PublicationSection />
+      <TechnologySection />
     </div>
   </div>
 </template>
@@ -75,13 +55,10 @@ const carouselSlides = ['bg-1', 'bg-2', 'bg-3'];
   position: relative;
   max-height: 60vh;
   height: 60vh;
-  width: 100%;
+  z-index: 0;
 }
 
-.home {
-  z-index: -1;
-  max-width: 100%;
-}
+
 
 .slide-info {
   position: absolute;

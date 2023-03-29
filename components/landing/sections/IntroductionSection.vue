@@ -1,6 +1,6 @@
 <template>
-  <div class="p-6 sm:p-12 bg-secondary text-black w-full">
-    <div class="flex flex-col   space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
+  <div class="bg-secondary text-black p-8">
+    <div class="flex flex-col md:space-y-0 md:space-x-6 md:flex-row">
       <nuxt-img
         src="images/toa.jpeg"
         alt="profile picture"
@@ -22,7 +22,7 @@
         </button>
       </div>
     </div>
-    <p class="text-black font-bold w-full text-2xl mt-2">
+    <p class="text-black font-bold text-2xl mt-2">
       Un petit mot pour commencer
     </p>
     <div class="flex justify-center pt-4 space-x-4 align-center">

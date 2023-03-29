@@ -78,6 +78,7 @@
   <style lang="scss" scoped>
   .carousel {
     position: relative;
+
   }
   
   .navigate {

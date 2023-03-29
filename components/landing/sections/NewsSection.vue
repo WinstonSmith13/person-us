@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white text-black">
+  <div class="bg-white text-black p-8">
     <div class="flex flex-col md:space-y-0 md:space-x-6 md:flex-row">
-      <p class="text-black font-bold text-2xl mb-6">
+      <p class="font-bold text-2xl mb-6">
         Mes dernières actualités
       </p>
     </div>
