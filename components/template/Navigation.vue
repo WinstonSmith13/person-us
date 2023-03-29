@@ -6,7 +6,7 @@
         class="hover:bg-indigo-800"
         @click="menuDisplay"
       />
-      <SearchButton class="bg-primary hover:bg-indigo-800 ml-4 sm:ml-8 lg:ml-12" />
+      <SearchButton/>
       <NavigationMenu
         @click="menuToggle = false"
         v-if="menuToggle"
