@@ -23,10 +23,10 @@
   </div>
 
 
-  <div class="relative mt-[-100px] mx-4 md:mx-40 flex justify-center">
-    <div class="max-w-screen-lg mx-auto shadow-2xl bg-white">
+  <div class="relative mt-[-100px] flex items-center px-52">
+    <div class="w-full  mx-auto shadow-2xl bg-white">
       <!-- Main content  -->
-      <div class="m-10">
+      <div class="m-10 ">
         <Introduction />
       </div>
       <div class="m-10">
@@ -75,10 +75,12 @@ const carouselSlides = ['bg-1', 'bg-2', 'bg-3'];
   position: relative;
   max-height: 60vh;
   height: 60vh;
+  width: 100%;
 }
 
 .home {
   z-index: -1;
+  max-width: 100%;
 }
 
 .slide-info {

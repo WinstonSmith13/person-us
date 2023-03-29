@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute top-0 w-full">
+  <div class="absolute min-h-screen">
     <div class="fixed inset-x-0 z-10 mx-4">
       <div
         class="max-w-screen-lg mx-auto"
@@ -24,7 +24,7 @@ import { onMounted } from 'vue';
 const sectionOneOption = {
   root: null,
   threshold: 0,
-  rootMargin: "180px",
+  rootMargin: "210px",
 };
 
 
@@ -38,10 +38,10 @@ onMounted(() => {
       console.log(entry)
       if (!entry.isIntersecting) {
 
-        navBar.classList.add("transition-all", "duration-500", "max-w-[80%]");
+        navBar.classList.add("transition-all", "duration-500", "max-w-[90%]");
         navBar.classList.remove("max-w-screen-lg");
       } else {
-        navBar.classList.remove("max-w-[80%]");
+        navBar.classList.remove("max-w-[90%]");
         navBar.classList.add("max-w-screen-lg");
       }
     })

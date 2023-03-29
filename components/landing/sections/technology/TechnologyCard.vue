@@ -1,10 +1,10 @@
 <template>
-  <div class="max-w-md sm:flex shadow-lg bg-secondary rounded">
-    <div class=" w-full sm:h-32 sm:w-32 sm:mb-0">
+  <div class="max-w-md lg:max-w-3xl mx-auto sm:flex shadow-lg bg-secondary rounded">
+    <div class="w-full sm:w-32 sm:h-32">
       <nuxt-img
         src="images/chemical.jpeg"
         alt="profil picture"
-        class="object-cover  w-full h-full rounded dark:bg-gray-500"
+        class="object-cover w-full h-full rounded dark:bg-gray-500"
       />
     </div>
     <div class="flex flex-wrap p-3">
@@ -21,9 +21,6 @@
     </div>
   </div>
 </template>
-  
-  <script setup>
-  
-  </script>
-  
-  
+
+<script setup>
+</script>
