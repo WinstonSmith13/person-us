@@ -1,9 +1,9 @@
 <template>
-  <div class="shadow-2xl text-sm">
-    <h3 class="white font-bold py-2">
+  <div>
+    <h3 class="font-bold py-2">
       PRENOM NOM
     </h3>
-    <ul class="flex flex-col white  space-y-2">
+    <ul class="flex flex-col space-y-2">
       <li>
         Mail de contact
       </li>
