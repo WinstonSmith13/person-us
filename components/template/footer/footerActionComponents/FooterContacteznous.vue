@@ -1,21 +1,20 @@
 <template>
-  <section>
-    <div class="py-8 px-4 w-full h-full mx-auto max-w-screen-xl">
-      <div class="text-center">
-        <h2 class="mb-4  tracking-tight font-bold text-gray-900 text-2xl">
-          CONTACTEZ-NOUS
-        </h2>
+  <div class="bg-secondary z-[100] border w-full p-8 ">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-gray-900">
+        CONTACTEZ-NOUS
+      </h2>
 
-        <button class="h-10 px-5 text-white transition-colors duration-150 bg-black rounded-full focus:shadow-outline hover:bg-primary">
-          FORMULAIRE
-        </button>
-      </div>
+      <button class="rounded-full bg-primary hover:bg-indigo-900 text-white px-4 py-2">
+        Formulaire
+      </button>
+
     </div>
-  </section>
+  </div>
 </template>
-    
+  
 <script setup>
-    
+
 </script>
     
     

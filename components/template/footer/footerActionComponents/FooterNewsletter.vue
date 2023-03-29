@@ -1,46 +1,30 @@
 <template>
-  <div class="py-8 px-4 h-full w-full mx-auto">
+  <div class="bg-secondary z-[100] border w-full p-8">
     <div class="text-center">
-      <h2 class="mb-4 text-2xl tracking-tight font-bold text-gray-900">
+      <h2 class="text-2xl font-bold text-gray-900">
         NEWSLETTER
       </h2>
-      <form action="#">
-        <div class="items-center mx-autospace-y-4 max-w-screen-sm flex ">
-          <div class="relative w-full">
-            <label
-              for="email"
-              class="hidden mb-2 text-sm font-medium text-gray-900"
-            >Email address</label>
-            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-              <svg
-                class="w-5 h-5 text-gray-700"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              ><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
-            </div>
-            <input
-              class="block p-3 pl-10 w-full text-sm bg-tertiary border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500"
-              placeholder="Votre email"
-              type="email"
-              id="email"
-              required=""
-            >
-          </div>
-          <div>
-            <button
-              type="submit"
-              class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-black border-primary-600 sm:rounded-none sm:rounded-r-lg focus:shadow-outline hover:bg-primary"
-            >
-              S'INSCRIRE
-            </button>
-          </div>
-        </div>
-      </form>
+
+      <div class="flex rounded-md shadow-sm">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Votre email"
+          class="p-2 flex-1 block w-full rounded-l-full sm:text-sm border bg-gray-100 focus:outline-none focus:ring-primary focus:border-primary"
+          required
+        >
+        <button
+          type="submit"
+          class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-r-full text-white bg-primary hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+        >
+          Soumettre
+        </button>
+      </div>
     </div>
   </div>
 </template>
-
+  
 <script setup>
 
 </script>

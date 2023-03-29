@@ -1,5 +1,5 @@
 <template>
-  <div class="text-sm">
+  <div class="shadow-2xl text-sm">
     <h3 class="white font-bold py-2">
       PRENOM NOM
     </h3>

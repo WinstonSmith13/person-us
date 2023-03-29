@@ -1,16 +1,8 @@
 <template>
-  <div class="max-w-full mx-auto px-4 ">
-    <div class="flex flex-wrap justify-center md:justify-between md:text-left">
-      <div class="basis-1/3">
-        <footerNewsletter />
-      </div> 
-      <div class="basis-1/3">
+  <div class="shadow-2xl">   
+        <footerNewsletter />   
         <footerSuiveznous />
-      </div> 
-      <div class="basis-1/3">
         <footerContacteznous />
-      </div>
-    </div>
   </div>
 </template>
 

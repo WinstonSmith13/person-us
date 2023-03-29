@@ -1,7 +1,7 @@
 <template>
-  <div class="py-8 px-4 mx-auto h-full w-full">
-    <div class="max-w-screen-md sm:text-center">
-      <h2 class="mb-4 tracking-tight font-bold text-gray-900 text-2xl">
+  <div class="bg-secondary z-[100] border w-full p-8">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-gray-900">
         SUIVEZ-NOUS
       </h2>
 
