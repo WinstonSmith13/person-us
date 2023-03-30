@@ -20,7 +20,7 @@
     </CarouselSlide>
   </CarouselTemplate>
   
-  <div class="relative mt-[-100px]">
+  <div class="relative mt-[-50px]">
     <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto">
       <Introduction />
       <News />

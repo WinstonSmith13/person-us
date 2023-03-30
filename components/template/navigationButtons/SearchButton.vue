@@ -1,6 +1,6 @@
 <template>
   <div
-    class="search-box"
+    class="search-box z-20"
     :class="{ open: searchOpen }"
   >
     <input
