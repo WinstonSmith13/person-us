@@ -1,7 +1,7 @@
 <template>
-  <section class=" bg-primary rounded shadow-lg p-3 grid place-items-center ">
-    <div class="flex flex-col justify-items-center items-center text-center px-auto h-100 w-100">
-      <h2 class="text-lg font-extrabold text-white">
+  <section class="bg-primary rounded shadow-lg grid place-items-center w-full ">
+    <div class="flex flex-col items-center text-center w-full ">
+      <h2 class="text-lg font-extrabold text-white ">
         VOIR TOUTES
       </h2>
       <p class="text-2xl text-white ">

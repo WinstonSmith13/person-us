@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-primary text-white -space-y-2 justify-center p-1">
+  <div class="flex flex-col bg-primary text-white -space-y-2 justify-center p-1 max-w-sm ">
     <div class="font-bold">
       <p>MER</p>
     </div>

@@ -1,13 +1,13 @@
 <template>
-  <div class="max-w-md lg:max-w-3xl mx-auto sm:flex shadow-lg bg-secondary rounded">
-    <div class="w-full sm:w-32 sm:h-32">
+  <div class="max-w-sm sm:flex shadow-lg bg-secondary rounded">
+    <div class="">
       <nuxt-img
         src="images/chemical.jpeg"
         alt="profil picture"
-        class="object-cover w-full h-full rounded dark:bg-gray-500"
+        class="object-cover w-full h-full rounded"
       />
     </div>
-    <div class="flex flex-wrap p-3">
+    <div class="flex flex-wrap p-4">
       <div>
         <h2 class="text-lg font-bold text-primary">
           Matériel technique
