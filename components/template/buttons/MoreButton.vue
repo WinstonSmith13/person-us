@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-primary rounded shadow-lg grid place-items-center w-full ">
-    <div class="flex flex-col items-center text-center w-full ">
+  <section class="bg-primary rounded shadow-lg h-full my-auto flex items-center justify-center p-2">
+    <div class="flex flex-col items-center text-center ">
       <h2 class="text-lg font-extrabold text-white ">
         VOIR TOUTES
       </h2>
