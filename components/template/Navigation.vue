@@ -1,12 +1,15 @@
 <template>
-  <nav > 
-    <LogoUs class="py-2" />
+  <nav> 
+    
+      <LogoUs class="py-2" />
+  
+    
     <div class="flex flex-row justify-between items-center sm:items-stretch">
       <MenuButton
         class="hover:bg-indigo-800"
         @click="menuDisplay"
       />
-      <SearchButton/>
+      <SearchButton />
       <NavigationMenu
         @click="menuToggle = false"
         v-if="menuToggle"

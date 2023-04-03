@@ -18,7 +18,9 @@
       <p class="mx-auto">
         &copy; 2023 Poulp.us
       </p>
-      <p class="mx-auto">Mention légale</p>
+      <p class="mx-auto">
+        <NuxtLink to="/legals">Mentions Légales</NuxtLink>
+      </p>
     </div>
   </div>
 </template>
