@@ -23,13 +23,21 @@
 
   <div class="relative mt-[-50px]">
     <div class="absolute flex justify-center gap-4 top-[-50px] left-1/2 transform -translate-x-1/2 mx-auto ">
-      <div class=" flex gap-4  text-xl bg-white shadow-lg text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer">
+      <div class=" flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
         <Icon icon="ion:options" />
         Option 1
       </div>
-      <div class="flex gap-4  text-xl bg-white shadow-lg text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer">
+      <div class="flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
         <Icon icon="ion:options" />
         Option 2
+      </div>
+      <div class="flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
+        <Icon icon="ion:options" />
+        Option 3
+      </div>
+      <div class="flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
+        <Icon icon="ion:options" />
+        Option 4
       </div>
     </div>
 
