@@ -24,7 +24,7 @@ function toggleMenu() {
 </script>
 
 <style>
-*{ box-shadow: 0 0 0 3px red inset;}
+
 
 .menu-btn {
   position: relative;
