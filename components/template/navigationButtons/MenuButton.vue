@@ -1,7 +1,7 @@
 <template>
   <div
     @click="toggleMenu"
-    class="menu-btn flex-row z-[0]"
+    class="menu-btn flex-row z-[2]"
     :class="{ open: menuOpen }"
   >
     <div class="menu-btn_burger">
