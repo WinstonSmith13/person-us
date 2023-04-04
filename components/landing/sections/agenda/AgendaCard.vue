@@ -1,5 +1,5 @@
 <template>
-  <div class="relative shadow-lg bg-secondary  rounded w-full">
+  <div class="relative max-w-sm rounded overflow-hidden shadow-lg bg-secondary">
     <div class="absolute left-4 -top-1 h-16">
       <AgendaHeadband />
     </div>

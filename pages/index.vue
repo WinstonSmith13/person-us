@@ -15,6 +15,7 @@
           :src="`../public/images/carouselBg/${slide}.jpeg`"
           alt="carousel_images"
           class="h-full min-w-full object-cover"
+          format="webp"
         />
       </div>
     </CarouselSlide>
@@ -72,6 +73,8 @@ const carouselSlides = ['bg-1', 'bg-2', 'bg-3'];
 </script>
 
 <style lang="scss" scoped>
+
+
 .carousel {
   position: relative;
   max-height: 60vh;

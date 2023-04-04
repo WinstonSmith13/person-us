@@ -5,7 +5,7 @@
         Mon agenda
       </p>
     </div>
-    <div class="flex flex-row gap-4 ">
+    <div class="flex flex-row gap-4">
       <AgendaCard />
       <AgendaCard />
       <AgendaCard />
@@ -19,3 +19,9 @@
   import AgendaCard from './agenda/AgendaCard.vue'
   
   </script>
+
+  <style>
+* {
+  box-shadow: 0 0 0 3px red
+  inset
+}</style>
