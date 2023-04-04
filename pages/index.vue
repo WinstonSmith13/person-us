@@ -42,7 +42,7 @@
       </div>
     </div>
 
-    <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto">
+    <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto ">
       <Introduction />
       <News />
       <AgendaSection />

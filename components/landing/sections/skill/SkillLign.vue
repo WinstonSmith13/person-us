@@ -1,7 +1,8 @@
 <template>
-  <div class="flex flex-row ">
+  <div class="flex flex-row z-[20]">
     <button
       @click="changeIcon"
+      class="z-[20]"
     >
       <Icon
         :icon="`${icon}`"

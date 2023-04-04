@@ -1,6 +1,6 @@
 <template>
-  <div class="relative max-w-sm rounded overflow-hidden shadow-lg bg-secondary">
-    <div class="absolute left-4 -top-1 h-16">
+  <div class="relative max-w-sm rounded shadow-lg bg-secondary">
+    <div class="absolute left-4 top-[-10px] h-16">
       <AgendaHeadband />
     </div>
 
@@ -19,8 +19,12 @@
   </div>
 </template>
   
-  <script setup>
+<script setup>
 import AgendaHeadband from '../../../template/headband/AgendaHeadband.vue';
-  </script>
+</script>
 
-  
+<style scoped>
+  .max-w-sm {
+    max-width: 100%;
+  }
+</style>

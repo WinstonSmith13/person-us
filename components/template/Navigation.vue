@@ -1,9 +1,6 @@
 <template>
-  <nav> 
-    
-      <LogoUs class="py-2" />
-  
-    
+  <nav>
+    <LogoUs class="py-2" />
     <div class="flex flex-row justify-between items-center sm:items-stretch">
       <MenuButton
         class="hover:bg-indigo-800"
@@ -30,9 +27,7 @@ import NavigationMenu from "./menuTemplate/NavigationMenu.vue";
 
 const menuToggle = ref(false);
 
-function menuDisplay () {
+function menuDisplay() {
   menuToggle.value = !menuToggle.value
 }
-
-
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div
     @click="toggleMenu"
-    class="menu-btn flex-row z-[1]"
+    class="menu-btn flex-row z-[0]"
     :class="{ open: menuOpen }"
   >
     <div class="menu-btn_burger">
@@ -24,6 +24,8 @@ function toggleMenu() {
 </script>
 
 <style>
+*{ box-shadow: 0 0 0 3px red inset;}
+
 .menu-btn {
   position: relative;
   display: flex;

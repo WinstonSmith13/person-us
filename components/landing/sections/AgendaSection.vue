@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white text-black p-8 ">
-    <div class="flex flex-col  space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
+  <div class=" bg-white text-black p-8 ">
+    <div class=" flex flex-col  space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
       <p class="text-black font-bold text-2xl mb-6">
         Mon agenda
       </p>
@@ -14,14 +14,11 @@
   </div>
 </template>
     
-  <script setup>
-  import MoreButton from '../../template/buttons/MoreButton.vue';
-  import AgendaCard from './agenda/AgendaCard.vue'
-  
-  </script>
+<script setup>
+import MoreButton from '../../template/buttons/MoreButton.vue';
+import AgendaCard from './agenda/AgendaCard.vue'
 
-  <style>
-* {
-  box-shadow: 0 0 0 3px red
-  inset
-}</style>
+</script>
+
+<style></style>
+
