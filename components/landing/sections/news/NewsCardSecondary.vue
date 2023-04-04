@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-sm rounded overflow-hidden shadow-lg sm:grid">
     <nuxt-img
-      class="sm:w-full"
+      class="sm:w-full object-cover"
       format="webp"
       :src="newSecond.image"
       :alt="newSecond.image"

@@ -37,5 +37,11 @@
       job: 'Chef de projet',
       imageSrc: '/images/toa.jpeg',
     },
+    {
+      id: 4,
+      name: 'Ada',
+      job: 'Chef de projet',
+      imageSrc: '/images/jake.jpeg',
+    },
   ];
 </script>

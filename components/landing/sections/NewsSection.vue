@@ -13,7 +13,6 @@
           :key="newSecond.id"
           :new-second="newSecond"
         />
-        
         <MoreButton />
       </div>
     </div>
