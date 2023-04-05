@@ -1,26 +1,30 @@
 <template>
-  <div class="max-w-sm sm:flex shadow-lg bg-secondary rounded">
-    <div class="">
-      <nuxt-img
-        src="images/chemical.jpeg"
-        alt="profil picture"
-        class="object-cover w-full h-full rounded"
-      />
-    </div>
-    <div class="flex flex-wrap p-4">
-      <div>
-        <h2 class="text-lg font-bold text-primary">
-          Matériel technique
-        </h2>
-        <p class="text-lg font-bold text-primary">
-          Lorem Ipsum
-        </p>
-        <span class="text-sm font-bold text-black">
-          ENTREPRISE/UNIVERSITÉ</span>
-      </div>
+  <div class="w-[60wm] h-[15vh] sm:flex shadow-lg bg-secondary rounded">
+    <nuxt-img
+      :src="technology.image"
+      :alt="technology.image"
+      class="object-cover w-[6vw] h-full rounded"
+    />
+    
+    <div class="p-4  flex flex-col justify-center">
+      <h2 class="text-md font-bold text-primary">
+        {{ technology.material }}
+      </h2>
+      <p class="text-md font-bold text-primary">
+        {{ technology.description }}
+      </p>
+      <span class="text-sm font-bold text-black max-w-sm">
+        {{ technology.university }}
+      </span>
     </div>
   </div>
 </template>
 
 <script setup>
+const props = defineProps({
+  technology: {
+    type: Object,
+    required: true,
+  }
+})
 </script>

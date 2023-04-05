@@ -6,11 +6,11 @@
       </p>
     </div>
     <div class="grid grid-cols-3 gap-3 mt-6 ">
-      <TechnologyCard />
-      <TechnologyCard />
-      <TechnologyCard />
-      <TechnologyCard />
-      <TechnologyCard />
+      <TechnologyCard
+        v-for="technology in technologies"
+        :key="technology.id"
+        :technology="technology"
+      />
       <MoreButton />
     </div>
   </div>
@@ -21,5 +21,44 @@
 <script setup>
 import TechnologyCard from './technology/TechnologyCard.vue'
 import MoreButton from '../../template/buttons/MoreButton.vue';
+
+const technologies = [
+  {
+    id: 1,
+    material: "Matériel technique",
+    image: '/images/chemical.jpeg',
+    description:'Lorem Ipsum',
+    university: "ENTREPRISE"
+    
+  },
+  {
+    id: 2,
+    material: "Matériel technique",
+    image: '/images/chemical.jpeg',
+    description:'Lorem Ipsum',
+    university: "ENTREPRISE"
+  },
+  {
+    id: 3,
+    material: "Matériel technique",
+    image: '/images/chemical.jpeg',
+    description:'Lorem Ipsum',
+    university: "ENTREPRISE"
+  },
+  {
+    id: 4,
+    material: "Matériel technique",
+    image: '/images/chemical.jpeg',
+    description:'Lorem Ipsum',
+    university: "ENTREPRISE"
+  },
+  {
+    id: 5,
+    material: "Matériel technique",
+    image: '/images/chemical.jpeg',
+    description:'Lorem Ipsum',
+    university: "ENTREPRISE"
+  }
+];
 
 </script>

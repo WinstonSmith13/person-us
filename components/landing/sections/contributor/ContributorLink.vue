@@ -3,21 +3,27 @@
     <div>
       <!--Lien vers le profil FB-->
       <!--Penser un component icon avec V-for-->
-      <a href="www.poulp.us">
+      <a href="https://www.poulp.us">
         <FacebookIcon />
       </a>
     </div>
     <div>
       <!--Lien vers le profil Insta-->
-      <InstragramIcon />
+      <a href="https://www.poulp.us">
+        <InstragramIcon />
+      </a>
     </div>
     <div>
       <!--Lien vers le profil Linkedin-->
-      <LinkedinIcon />
+      <a href="https://www.poulp.us">
+        <LinkedinIcon />
+      </a>
     </div>
     <div>
       <!--Lien vers le profil Site Internet Perso-->
-      <WebIcon />
+      <a href="https://www.poulp.us">
+        <WebIcon />
+      </a>
     </div>
   </div>
 </template>
