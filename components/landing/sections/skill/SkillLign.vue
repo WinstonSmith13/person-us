@@ -15,13 +15,18 @@
     <h3
       class="font-semibold text-primary pl-5 pt-1"
     >
-      Compétence 
+      Compétence {{ skill.id }}
     </h3>
   </div>
   <div>
-    <SkillCard v-if="showCard" />
+    <SkillCard
+      v-if="showCard"
+      :tags="tags"
+      :skill="skill"
+    />
   </div>
 </template>
+
   
   <script setup>
   import { ref } from 'vue'
@@ -34,6 +39,17 @@
       icon.value = (icon.value === "mdi:plus-circle" ? "mdi:minus-circle-outline" : "mdi:plus-circle")
         showCard.value = !showCard.value
     };
+
+    const props = defineProps({
+  skill: {
+    type: Object,
+    required: true,
+  },
+  tags: {
+    type: Array,
+    required: true,
+  }
+})
 
   </script>
   
