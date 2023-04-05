@@ -12,9 +12,38 @@
   </div>
 </template>
         
-      <script setup>
-      import SkillLign from './skill/SkillLign.vue';
-      
-      
-      </script>
+<script setup>
+import SkillLign from './skill/SkillLign.vue';
+
+const skills = [
+  {
+    id : 1,
+    description: "Lorem ipsum dolor sit amet, consectetur elit.",
+    tags: ["THÉMATIQUE 1", "THÉMATIQUE 2"],
+    budget: "9 000 000 Euros" ,
+  },
+  {
+    id : 2,
+    description: "Lorem ipsum dolor sit amet, consectetur elit.",
+    tags: [ "THÉMATIQUE 3"],
+    budget: "8 000 000 Euros" ,
+  },
+  {
+    id : 3,
+    description: "Lorem ipsum dolor sit amet, consectetur elit.",
+    tags: ["THÉMATIQUE 1", "THÉMATIQUE 2"],
+    budget: "9 000 000 Euros" ,
+  },
+  {
+    id : 4,
+    description: "Lorem ipsum dolor sit amet, consectetur elit.",
+    tags: [ "THÉMATIQUE 3"],
+    budget: "8 000 000 Euros" ,
+  }
+];
+
+
+
+
+</script>
       
