@@ -6,14 +6,41 @@
       </p>
     </div>
     <div class="flex flex-row gap-4">
-      <PublicationCard />
-      <PublicationCard />
-      <PublicationCard />
+      <PublicationCard
+        v-for="publication in publications"
+        :key="publication.id"
+        :publication="publication"
+      />
     </div>
   </div>
 </template>
         
-      <script setup>
-      import PublicationCard from './publication/PublicationCard.vue';
-      
-      </script>
+<script setup>
+import PublicationCard from './publication/PublicationCard.vue';
+
+const publications = [
+  {
+    id : 1,
+    abstract: "Lorem ipsum dolor sit amet, consectetur elit.", 
+    journal: "Lorem ipsum university’s journal",
+    date:"(2021)",
+    reference:"HAL-00000001",
+  },
+  {
+    id : 2,
+    abstract: "Lorem ipsum dolor sit amet, consectetur elit.",
+    journal: "Lorem ipsum university’s journal",
+    date:"(2019)",
+    reference:"HAL-00000002",
+  },
+  {
+    id : 3,
+    abstract: "Lorem ipsum dolor sit amet, consectetur elit.",
+    journal: "Lorem ipsum university’s journal",
+    date:"(2009)",
+    reference:"HAL-00000003",
+  }
+];
+
+
+</script>

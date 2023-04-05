@@ -1,14 +1,14 @@
 <template>
-  <div class="mt-6 max-w-sm rounded overflow-hidden shadow-lg bg-secondary">
-    <div class="p-4 flex flex-col justify-center">
+  <div class="mt-6 w-[60vw] rounded overflow-hidden shadow-lg bg-secondary">
+    <div class="p-4  flex flex-col justify-center">
       <div class=" font-bold text-sm text-primary mb-2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur quam sit.
+        {{ publication.abstract }}
       </div>
       <div class="font-light text-sm italic text-black">
-        Lorem ipsum university’s journal (2020)
+        {{ publication.journal }} 
       </div>
       <div class="font-semibold text-sm italic text-black mb-2">
-        (2020)
+        {{ publication.date }}
       </div>
       <div class="flex  -space-x-2">
         <nuxt-img
@@ -48,15 +48,26 @@
           height="800"
         />
       </div>
-  
+
       <div class="text-sm font-semibold text-black py-2">
-        HAL-00000000
+        {{ publication.reference }}
       </div>
     </div>
   </div>
 </template>
       
-      <script setup>
-      
-      </script>
+<script setup>
+
+const props = defineProps({
+  publication: {
+    type: Object,
+    required: true,
+  },
+  users: {
+    type: Array,
+    default: null,
+  }
+})
+
+</script>
       
