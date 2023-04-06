@@ -1,6 +1,6 @@
 <template>
   <div class="bg-secondary text-black p-8">
-    <div class="flex flex-col md:flex-row md:items-center md:space-x-6">
+    <div class="flex flex-col items-center md:flex-row md:items-center md:space-x-6">
       <nuxt-img
         :src="user.image"
         :alt="user.name"
@@ -8,15 +8,17 @@
         format="webp"
         width="800"
         height="800"
-        class="w-24 h-24 border rounded md:w-32 md:h-32 md:justify-self-start"
+        class="w-24 h-24 border rounded md:w-32 md:h-32"
       />
-      <div class="flex flex-col items-center md:items-start">
-        <h4 class="text-lg font-semibold text-center md:text-left">
-          <p>{{ user.name }} {{ user.lastname }}</p>
-        </h4>
-        <h5 class="text-primary font-bold">
-          {{ user.activite }}
-        </h5>
+      <div class="flex flex-col  md:items-center md:justify-between w-full md:w-auto">
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="text-lg font-semibold text-center md:text-left">
+            <p>{{ user.name }} {{ user.lastname }}</p>
+          </h4>
+          <h5 class="text-primary font-bold">
+            {{ user.activite }}
+          </h5>
+        </div>
         <button class="h-8 mt-2 px-2 text-white transition-colors duration-150 bg-primary focus:shadow-outline hover:bg-indigo-800">
           VOIR LE PROFIL
         </button>
@@ -32,6 +34,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 
 const user = {

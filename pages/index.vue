@@ -23,34 +23,7 @@
 
   <div class="relative mt-[-50px]">
     <div class="absolute flex justify-center gap-4 top-[-50px] left-1/2 transform -translate-x-1/2 mx-auto">
-      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon
-          icon="ion:options"
-          class="inline-block align-middle"
-        />
-        <span class="inline-block align-middle">Option 1</span>
-      </div>
-      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon
-          icon="ion:options"
-          class="inline-block align-middle"
-        />
-        <span class="inline-block align-middle">Option 2</span>
-      </div>
-      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon
-          icon="ion:options"
-          class="inline-block align-middle"
-        />
-        <span class="inline-block align-middle">Option 3</span>
-      </div>
-      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon
-          icon="ion:options"
-          class="inline-block align-middle"
-        />
-        <span class="inline-block align-middle">Option 4</span>
-      </div>
+      <OptionButton />
     </div>
 
     <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto mt-8">
@@ -77,14 +50,16 @@ import PublicationSection from '../components/landing/sections/PublicationSectio
 import TechnologySection from '../components/landing/sections/TechnologySection.vue'
 import CarouselTemplate from '../components/landing/sections/carousel/CarouselTemplate.vue';
 import CarouselSlide from '../components/landing/sections/carousel/CarouselSlide.vue';
+import OptionButton from '../components/template/buttons/OptionButton.vue';
 import { Icon } from '@iconify/vue';
 
 const carouselSlides = ['bg-1', 'bg-2', 'bg-3'];
 
+
+
 </script>
 
 <style lang="scss" scoped>
-
 
 .carousel {
   position: relative;

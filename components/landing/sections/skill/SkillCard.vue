@@ -7,15 +7,15 @@
         :tags="[tag]"
       />
     </div>
-    
-    <div class="flex flex-row mt-2">
+
+    <div class="flex flex-col md:flex-row mt-2">
       <nuxt-img
-        class="w-[15vw] h-[20vh] object-cover"
+        class="w-full h-56 md:w-[15vw] md:h-[20vh] object-cover"
         format="webp"
         :src="skill.image"
         :alt="skill.image"
       />
-      <div class="pl-6 bg-white">
+      <div class="md:pl-6 bg-white flex-1">
         <div class="font-light text-justify text-sm mb-2">
           {{ skill.content }}
         </div>
@@ -24,7 +24,7 @@
     </div>
   </div>
 </template>
-  
+
 <script setup>
 import DetailsButton from '../../../template/buttons/DetailsButton.vue';
 import ThematicTag from '../../../template/tag/ThematicTag.vue';
