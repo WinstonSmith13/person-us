@@ -2,7 +2,7 @@
   <div class="bg-secondary">
     <div class="fixed inset-x-0 z-10 mx-4">
       <div
-        class="max-w-screen-lg mx-auto"
+        class="max-w-screen-lg mx-auto sm:max-screen-sm"
         id="navBar"
       >
         <NavigationTemplate />
@@ -37,7 +37,6 @@ onMounted(() => {
 
   const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
     entries.forEach(entry => {
-      console.log(entry)
       if (!entry.isIntersecting) {
 
         navBar.classList.add("transition-all", "duration-500", "max-w-[90%]");

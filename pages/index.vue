@@ -21,28 +21,39 @@
     </CarouselSlide>
   </CarouselTemplate>
 
-
   <div class="relative mt-[-50px]">
-    <div class="absolute flex justify-center gap-4 top-[-50px] left-1/2 transform -translate-x-1/2 mx-auto ">
-      <div class=" flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon icon="ion:options" />
-        Option 1
+    <div class="absolute flex justify-center gap-4 top-[-50px] left-1/2 transform -translate-x-1/2 mx-auto">
+      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
+        <Icon
+          icon="ion:options"
+          class="inline-block align-middle"
+        />
+        <span class="inline-block align-middle">Option 1</span>
       </div>
-      <div class="flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon icon="ion:options" />
-        Option 2
+      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
+        <Icon
+          icon="ion:options"
+          class="inline-block align-middle"
+        />
+        <span class="inline-block align-middle">Option 2</span>
       </div>
-      <div class="flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon icon="ion:options" />
-        Option 3
+      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
+        <Icon
+          icon="ion:options"
+          class="inline-block align-middle"
+        />
+        <span class="inline-block align-middle">Option 3</span>
       </div>
-      <div class="flex gap-4  text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
-        <Icon icon="ion:options" />
-        Option 4
+      <div class="flex gap-4 text-xl bg-white shadow-md text-black hover:translate-y-1 transition-all duration-300 p-6 cursor-pointer mx-2">
+        <Icon
+          icon="ion:options"
+          class="inline-block align-middle"
+        />
+        <span class="inline-block align-middle">Option 4</span>
       </div>
     </div>
 
-    <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto ">
+    <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto mt-8">
       <Introduction />
       <News />
       <AgendaSection />

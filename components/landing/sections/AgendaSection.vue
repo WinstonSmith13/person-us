@@ -5,7 +5,7 @@
         Mon agenda
       </p>
     </div>
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-col md:flex-row gap-4">
       <AgendaCard
         v-for="activity in activities"
         :key="activity.id"
