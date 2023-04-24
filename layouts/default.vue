@@ -1,6 +1,6 @@
 <template>
   <div class="bg-secondary">
-    <div class="fixed inset-x-0 z-10 mx-4">
+    <div class="fixed inset-x-0 z-10 mx-4 ">
       <div
         class="max-w-screen-lg mx-auto sm:max-screen-sm"
         id="navBar"
@@ -39,10 +39,10 @@ onMounted(() => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
 
-        navBar.classList.add("transition-all", "duration-500", "max-w-[90%]");
+        navBar.classList.add("transition-all", "duration-500", "max-w-screen-xl");
         navBar.classList.remove("max-w-screen-lg");
       } else {
-        navBar.classList.remove("max-w-[90%]");
+        navBar.classList.remove("max-w-screen-xl");
         navBar.classList.add("max-w-screen-lg");
       }
     })
