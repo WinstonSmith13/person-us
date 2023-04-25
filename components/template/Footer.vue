@@ -20,6 +20,7 @@
       </p>
       <p class="mx-auto">
         <NuxtLink to="/legals">Mentions Légales</NuxtLink>
+        <NuxtLink to="/paralax">Paralax</NuxtLink>
       </p>
     </div>
   </div>
