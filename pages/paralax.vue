@@ -3,38 +3,59 @@
     <section> 
       <img
         src="./../public/images/paralax/bg.jpg"
-        id="bg"
+        ref="bg"
         alt="bg"
       >
       <img
         src="./../public/images/paralax/moon.png"
-        id="moon"
+        ref="moon"
         alt="moon"
       >
       <img
         src="./../public/images/paralax/mountain.png"
-        id="mountain"
+        ref="mountain"
         alt="mountain"
+        class="z-[3]"
       >
       <img
         src="./../public/images/paralax/road.png"
-        id="road"
+        ref="road"
         alt="road"
+        class="z-[4]"
       >
 
-      <h2 id="text">
+      <h2 ref="text" class="z-[1] text-white font-bold">
         Moon Ligth
       </h2>
     </section>
   </body>
 </template>
 
-<script setup>
+<script>
+import { ref, onMounted } from 'vue';
 
+export default {
+  setup() {
+    const bg = ref(null);
+    const moon = ref(null);
+    const mountain = ref(null);
+    const road = ref(null);
+    const text = ref(null);
 
+    onMounted(() => {
+      window.addEventListener('scroll', function(){
+        const value = this.window.scrollY;
+        bg.value.style.top = value * 0.5 + 'px';
+        moon.value.style.top = -value * 0.5 + 'px';
+        mountain.value.style.top = -value * 0.15 + 'px';
+        road.value.style.top = value * 0.25 + 'px';
+        text.value.style.top = value * 1 + 'px';
+      });
+    });
 
-
-
+    return { bg, moon, mountain, road, text };
+  }
+}
 </script>
 
 <style>
@@ -90,8 +111,8 @@ section img{
 #text {
     position: relative;
     color: #fff;
-    font-size: 10em;
-    z-index: 1;
+    font-size: 100em;
 }
+
 
 </style>
