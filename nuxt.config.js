@@ -46,13 +46,5 @@ export default defineNuxtConfig({
       xxl: 1536,
       '2xl': 1536
     }
-  },
-  // Solution pour revenir en haut de la page à chaque changement de page
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    } else {
-      return { top: 0 };
-    }
   }
 });

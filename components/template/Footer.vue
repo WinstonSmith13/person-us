@@ -19,8 +19,14 @@
         &copy; 2023 Poulp.us
       </p>
       <p class="mx-auto">
-        <NuxtLink to="/legals">Mentions Légales</NuxtLink>
-        <NuxtLink to="/paralax">Paralax</NuxtLink>
+        <NuxtLink to="/legals">
+          Mentions Légales
+        </NuxtLink>
+      </p>
+      <p class="mx-auto">
+        <NuxtLink to="/paralax">
+          Paralax
+        </NuxtLink>
       </p>
     </div>
   </div>

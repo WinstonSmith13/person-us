@@ -24,7 +24,7 @@
         class="z-[4]"
       >
 
-      <h2 ref="text" class="z-[1] text-white font-bold">
+      <h2 ref="text" class="z-[2] text-white font-bold">
         Moon Ligth
       </h2>
     </section>
@@ -47,8 +47,8 @@ export default {
         const value = this.window.scrollY;
         bg.value.style.top = value * 0.5 + 'px';
         moon.value.style.top = -value * 0.5 + 'px';
-        mountain.value.style.top = -value * 0.15 + 'px';
-        road.value.style.top = value * 0.25 + 'px';
+        mountain.value.style.top = -value * 0.10 + 'px';
+        road.value.style.top = value * 0.15 + 'px';
         text.value.style.top = value * 1 + 'px';
       });
     });
@@ -59,12 +59,9 @@ export default {
 </script>
 
 <style>
-body {
-    background: #0a2a43;
-    min-height: 1500px;
-}
 
-section {
+
+/* section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -80,24 +77,21 @@ section::before{
     bottom: 0;
     width:100%;
     height: 100px;
-    background: linear-gradient(to top, #0a2a43, transparent);
+    background: linear-gradient(to top, #0a2a43, transparent); 
     z-index: 10000;
+} */
 
-}
-
-section::after{
+/* section::after{
     content:'';
     position:absolute;
     top: 0;
     left: 0;
     width:100%;
     height: 100%;
-    background: #0a2a43;
-    z-index: 10000;
-    mix-blend-mode: color;
+   
     
-}
-
+} */
+/* 
 section img{
     position: absolute;
     top:0;
@@ -106,13 +100,13 @@ section img{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-}
+} */
 
-#text {
+/* #text {
     position: relative;
     color: #fff;
     font-size: 100em;
-}
+} */
 
 
 </style>

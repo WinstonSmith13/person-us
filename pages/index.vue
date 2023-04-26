@@ -2,6 +2,7 @@
   <CarouselTemplate
     class="carousel"
     v-slot="{ currentSlide }"
+    id="carouselId"
   >
     <CarouselSlide
       v-for="(slide, index) in carouselSlides"
@@ -21,7 +22,10 @@
     </CarouselSlide>
   </CarouselTemplate>
 
-  <div class="relative mt-[-50px]">
+  <div
+    id="content"
+    class="relative mt-[-50px]"
+  >
     <div class="absolute flex justify-center gap-4 top-[-50px] left-1/2 transform -translate-x-1/2 mx-auto">
       <OptionButton />
     </div>
@@ -51,15 +55,18 @@ import TechnologySection from '../components/landing/sections/TechnologySection.
 import CarouselTemplate from '../components/landing/sections/carousel/CarouselTemplate.vue';
 import CarouselSlide from '../components/landing/sections/carousel/CarouselSlide.vue';
 import OptionButton from '../components/template/buttons/OptionButton.vue';
-import { Icon } from '@iconify/vue';
+import { ref, onMounted } from 'vue';
 
 const carouselSlides = ['bg-1', 'bg-2', 'bg-3'];
+
+
 
 
 
 </script>
 
 <style lang="scss" scoped>
+
 
 .carousel {
   position: relative;
