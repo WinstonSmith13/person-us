@@ -61,7 +61,7 @@ export default {
 <style>
 
 
-/* section {
+section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -79,9 +79,9 @@ section::before{
     height: 100px;
     background: linear-gradient(to top, #0a2a43, transparent); 
     z-index: 10000;
-} */
+} 
 
-/* section::after{
+section::after{
     content:'';
     position:absolute;
     top: 0;
@@ -90,8 +90,8 @@ section::before{
     height: 100%;
    
     
-} */
-/* 
+} 
+
 section img{
     position: absolute;
     top:0;
@@ -100,13 +100,13 @@ section img{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-} */
+}
 
-/* #text {
+#text {
     position: relative;
     color: #fff;
     font-size: 100em;
-} */
+}
 
 
 </style>

@@ -1,46 +1,48 @@
 <template>
-  <CarouselTemplate
-    class="carousel"
-    v-slot="{ currentSlide }"
-    id="carouselId"
-  >
-    <CarouselSlide
-      v-for="(slide, index) in carouselSlides"
-      :key="index"
+  <section>
+    <CarouselTemplate
+      class="carousel"
+      v-slot="{ currentSlide }"
+      ref="carouselId"
     >
-      <div
-        v-show="currentSlide === index + 1"
-        class="slide-info"
+      <CarouselSlide
+        v-for="(slide, index) in carouselSlides"
+        :key="index"
       >
-        <nuxt-img
-          :src="`../public/images/carouselBg/${slide}.jpeg`"
-          alt="carousel_images"
-          class="h-full min-w-full object-cover"
-          format="webp"
-        />
+        <div
+          v-show="currentSlide === index + 1"
+          class="slide-info"
+        >
+          <nuxt-img
+            :src="`../public/images/carouselBg/${slide}.jpeg`"
+            alt="carousel_images"
+            class="h-full min-w-full object-cover"
+            format="webp"
+          />
+        </div>
+      </CarouselSlide>
+    </CarouselTemplate>
+
+    <div
+      ref="content"
+      class="relative mt-[-50px]"
+    >
+      <div class="absolute flex justify-center gap-4 top-[-50px] left-1/2 transform -translate-x-1/2 mx-auto">
+        <OptionButton />
       </div>
-    </CarouselSlide>
-  </CarouselTemplate>
 
-  <div
-    id="content"
-    class="relative mt-[-50px]"
-  >
-    <div class="absolute flex justify-center gap-4 top-[-50px] left-1/2 transform -translate-x-1/2 mx-auto">
-      <OptionButton />
+      <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto mt-8">
+        <Introduction />
+        <News />
+        <AgendaSection />
+        <ProjectSection />
+        <ContributorSection />
+        <SkillSection />
+        <PublicationSection />
+        <TechnologySection />
+      </div>
     </div>
-
-    <div class="max-w-screen-lg shadow-2xl bg-white p-8 mx-auto mt-8">
-      <Introduction />
-      <News />
-      <AgendaSection />
-      <ProjectSection />
-      <ContributorSection />
-      <SkillSection />
-      <PublicationSection />
-      <TechnologySection />
-    </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -58,8 +60,16 @@ import OptionButton from '../components/template/buttons/OptionButton.vue';
 import { ref, onMounted } from 'vue';
 
 const carouselSlides = ['bg-1', 'bg-2', 'bg-3'];
+const carouselId = ref(null);
+const content = ref(null);
 
-
+onMounted(() => {
+  window.addEventListener('scroll', function(){
+    const value = this.window.scrollY;
+    carouselId.value.style.top = value * 0.5 + 'px';
+    content.value.style.top = -value * 0.5 + 'px';
+  });
+});
 
 
 

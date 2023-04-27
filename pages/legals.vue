@@ -1,6 +1,9 @@
 <template>
   <div class="carousel">
-    <nuxt-img src="./../public/images/carouselBg/bg-1.jpeg" class="h-full min-w-full object-cover" />
+    <nuxt-img
+      src="./../public/images/carouselBg/bg-1.jpeg"
+      class="h-full min-w-full object-cover"
+    />
   </div>
 
   <div class="relative mt-[-50px]">
